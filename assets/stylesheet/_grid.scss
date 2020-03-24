@@ -14,19 +14,24 @@
    flex-wrap: wrap;
  }
 
- //  .grid {
- //    display: grid;
- //    grid-template-columns: repeat(2, fr);
- //  }
-
  .display-grid {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    grid-gap: 35px;
+
+   @media all and (max-width: 900px) {
+     grid-template-columns: auto;
+     padding: 30px;
+   }
  }
 
  .col-3-grid {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    grid-gap: 35px;
+
+   @media all and (max-width: 900px) {
+     grid-template-columns: auto;
+     padding: 30px;
+   }
  }

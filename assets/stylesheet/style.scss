@@ -26,7 +26,6 @@
 
       .logo-img {
         height: 2rem;
-        // width: 3rem;
         align-items: center;
 
       }
@@ -35,6 +34,22 @@
         font-size: 2rem;
         color: #007bff;
       }
+    }
+
+    @media all and (max-width: 900px) {
+
+      // padding: 0 30px;
+      .logo-img {
+        height: 2rem;
+        text-align: center;
+      }
+
+      p {
+        font-size: 3.6rem;
+        color: #007bff;
+      }
+
+
     }
   }
 
@@ -45,6 +60,24 @@
     font-weight: 600;
     color: #0fbcf9;
   }
+
+  @media all and (max-width: 900px) {
+    padding: 0 30px;
+
+    .logo-img {
+      height: 2rem;
+    }
+
+    p {
+      font-size: 3rem;
+      color: #007bff;
+      text-align: center;
+    }
+
+    .nav-link li {
+      display: none;
+    }
+  }
 }
 
 // Mai-Hero 
@@ -53,11 +86,23 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 15px;
 
+
+
   .image_right_side {
     height: 460px;
     width: 480px;
     margin-left: 8rem;
     border-radius: 0.2rem;
+  }
+
+  @media all and (max-width: 900px) {
+    grid-template-columns: auto;
+    padding: 30px;
+
+    .image_right_side {
+      width: 100%;
+      margin: 0;
+    }
   }
 
   .left-sec {
@@ -102,6 +147,8 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 25px;
 
+
+
   .left-col-sec {
     h6 {
       color: #0fbcf9;
@@ -120,6 +167,20 @@
       font-size: 1.2rem;
       line-height: 1.6;
       color: #30585e;
+    }
+  }
+
+  @media all and (max-width: 900px) {
+    grid-template-columns: auto;
+    padding: 30px;
+    text-align: justify;
+
+    h6 {
+      text-align: center;
+    }
+
+    h2 {
+      text-align: center;
     }
   }
 
@@ -212,18 +273,46 @@
     width: 30%;
     padding: 30px;
     margin: 2%;
+  }
 
-    p {
-      line-height: 1.5;
-      // color: #178190;
-      font-size: 1.3rem;
+  p {
+    line-height: 1.5;
+    // color: #178190;
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    text-transform: capitalize;
+    color: #30585e;
+  }
+
+  @media all and (max-width: 900px) {
+    .prevention-section {
+      display: flex;
+      flex-direction: column;
+
     }
 
-    h3 {
-      text-transform: capitalize;
-      color: #30585e;
+    .hand-wash {
+      width: 100%;
+      border: 0;
+      text-align: justify;
     }
   }
+}
+
+
+@media all and (max-width: 900px) {
+  .prevention-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hand-wash {
+    width: 100%;
+  }
+
 }
 
 // footer 

@@ -126,6 +126,12 @@ p {
   padding: 75px 0;
 }
 
+@media all and (max-width: 900px) {
+  .padding {
+    padding: 30px 0;
+  }
+}
+
 .padding-2 {
   padding: 40px 0;
 }
@@ -174,12 +180,28 @@ p {
   grid-gap: 35px;
 }
 
+@media all and (max-width: 900px) {
+  .display-grid {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    padding: 30px;
+  }
+}
+
 .col-3-grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 35px;
+}
+
+@media all and (max-width: 900px) {
+  .col-3-grid {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    padding: 30px;
+  }
 }
 
 .hero_header {
@@ -220,12 +242,40 @@ p {
   color: #007bff;
 }
 
+@media all and (max-width: 900px) {
+  .navigation_bar .top_nav_bar .logo-img {
+    height: 2rem;
+    text-align: center;
+  }
+  .navigation_bar .top_nav_bar p {
+    font-size: 3.6rem;
+    color: #007bff;
+  }
+}
+
 .navigation_bar .nav-link li {
   padding: 0 12px;
   font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: 600;
   color: #0fbcf9;
+}
+
+@media all and (max-width: 900px) {
+  .navigation_bar {
+    padding: 0 30px;
+  }
+  .navigation_bar .logo-img {
+    height: 2rem;
+  }
+  .navigation_bar p {
+    font-size: 3rem;
+    color: #007bff;
+    text-align: center;
+  }
+  .navigation_bar .nav-link li {
+    display: none;
+  }
 }
 
 .main_hero {
@@ -241,6 +291,18 @@ p {
   width: 480px;
   margin-left: 8rem;
   border-radius: 0.2rem;
+}
+
+@media all and (max-width: 900px) {
+  .main_hero {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    padding: 30px;
+  }
+  .main_hero .image_right_side {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .main_hero .left-sec h6 {
@@ -298,6 +360,21 @@ p {
   font-size: 1.2rem;
   line-height: 1.6;
   color: #30585e;
+}
+
+@media all and (max-width: 900px) {
+  .col-3-hero {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    padding: 30px;
+    text-align: justify;
+  }
+  .col-3-hero h6 {
+    text-align: center;
+  }
+  .col-3-hero h2 {
+    text-align: center;
+  }
 }
 
 .col-3-hero .syptom-image {
@@ -395,14 +472,47 @@ p {
   margin: 2%;
 }
 
-.prevention-section .hand-wash p {
+.prevention-section p {
   line-height: 1.5;
   font-size: 1.3rem;
 }
 
-.prevention-section .hand-wash h3 {
+.prevention-section h3 {
   text-transform: capitalize;
   color: #30585e;
+}
+
+@media all and (max-width: 900px) {
+  .prevention-section .prevention-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .prevention-section .hand-wash {
+    width: 100%;
+    border: 0;
+    text-align: justify;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .prevention-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .hand-wash {
+    width: 100%;
+  }
 }
 
 .footer {
